@@ -1,0 +1,9 @@
+---
+-  hosts: loacl
+   become: true
+   connection: loacl
+   tasks:
+     - name: list files
+       ansible.builtin.command:
+       command: ls -l
+       output: true
