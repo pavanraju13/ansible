@@ -2,7 +2,7 @@
  - hosts: Frontend
    become: true
    remote_user: ec2-user
-   remote_password: DevOps321
+  
    tasks:
     - name: Disable the nginx module
       ansible.builtin.command:
