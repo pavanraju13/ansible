@@ -1,0 +1,9 @@
+---
+ -  hosts: local
+    become: true
+    connection: local
+    tasks:
+    - name:connecction test
+      ansible.builtin.ping:
+        name: ping
+                
