@@ -7,11 +7,9 @@
     - name: Disable the nginx module
       ansible.builtin.command:
         cmd: dnf module disable nginx -y
-        name: Remove nginx
-        state: absent
+       
     - name: Enable the ngix module
       ansible.builtin.command:
         cmd: dnf module enable nginx:1.24 -y
-        name: Install nginx
-        state: present
+       
 
