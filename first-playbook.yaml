@@ -1,9 +1,9 @@
 ---
- -hosts: all
+ -hosts:  all
   become: true
   remote_user: ec2-user
   tasks:
-  - name: Remove nginx
-    ansible.bulitin.package:
+   - name: Remove nginx
+     ansible.builtin.package:
       name: nginx
       state: absent
