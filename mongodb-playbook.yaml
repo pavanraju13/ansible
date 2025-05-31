@@ -5,5 +5,5 @@
    tasks:
      - name: list files
        ansible.builtin.command:
-       command: ls -l
+       cmd: ls -l
        output: true
